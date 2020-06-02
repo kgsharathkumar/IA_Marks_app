@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/bg7"
+    tools:context=".HomeActivity">
+
+
+    <Button
+        android:id="@+id/marks"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#C0C0C0"
+        android:textColor="#ffffff"
+        android:text="@string/marks" />
+
+    <Button
+        android:id="@+id/attendance"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#C0C0C0"
+        android:textColor="#ffffff"
+        android:text="@string/attendance" />
+
+</LinearLayout>

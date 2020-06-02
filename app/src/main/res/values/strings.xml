@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ISE</string>
+    <string name="Username">username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="not_registered">Not_registered</string>
+    <string name="register">Register</string>
+    <string name="already_registered">Already_registered</string>
+    <string name="confirm_password">Confirm_password</string>
+    <string name="username">Username</string>
+    <string name="marks">Marks</string>
+    <string name="attendance">Attendance</string>
+</resources>
