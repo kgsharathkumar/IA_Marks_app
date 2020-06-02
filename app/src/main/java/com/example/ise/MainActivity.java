@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        db =new DatabaseHelper(this);
 
         mtextUsername =(EditText)findViewById(R.id.edittext_username);
         mtextPassword =(EditText)findViewById(R.id.edittext_password);
@@ -44,28 +43,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String user = mtextUsername.getText().toString().trim();
                 String pwd = mtextPassword.getText().toString().trim();
-                boolean res = db.checkuser(user, pwd);
-                if (res == true)
-                {
+
+                String StoredPassword =db.getregister(user);
+                if(pwd.equals(StoredPassword)){
+                    Toast.makeText(getApplicationContext(), StoredPassword+"Login Successfully", Toast.LENGTH_LONG).show();
                     Intent Homepage=new Intent(MainActivity.this,HomeActivity.class);
                     startActivity(Homepage);
-                }
-                else
-                    {
+                } else {
                     Toast.makeText(MainActivity.this, "Login Error", Toast.LENGTH_SHORT).show();
 
-                   }
-
-
-            }
-                });
-
-
-
-
-
-
-
-
+                }
+            }});
     }
 }
